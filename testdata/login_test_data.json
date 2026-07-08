@@ -1,0 +1,16 @@
+{
+  "TC001": {
+    "testCaseId": "TC001",
+    "scenario": "Valid Login",
+    "username": "Admin",
+    "password": "admin123",
+    "expectedResult": "Dashboard displayed"
+  },
+  "TC002": {
+    "testCaseId": "TC002",
+    "scenario": "Invalid Password",
+    "username": "Admin",
+    "password": "wrong123",
+    "expectedResult": "Error message"
+  }
+}

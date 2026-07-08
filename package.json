@@ -1,0 +1,17 @@
+{
+  "name": "orangehrm-framework-tc001-tc002",
+  "version": "1.0.0",
+  "description": "OrangeHRM Playwright POM framework for TC001 and TC002",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:html": "playwright test --reporter=html",
+    "test:allure": "playwright test --reporter=line,allure-playwright",
+    "allure:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
+    "allure:open": "allure open reports/allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "allure-playwright": "^3.10.2"
+  }
+}
