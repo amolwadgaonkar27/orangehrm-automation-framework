@@ -5,6 +5,8 @@ This framework is built using **JavaScript + Node.js + Playwright** with the **P
 ## Covered test cases
 - **TC001** – Valid Login
 - **TC002** – Invalid Password
+- **TC003** - Invalid Username
+- **TC004** - Blank Credentials
 
 ## Project structure
 ```text
