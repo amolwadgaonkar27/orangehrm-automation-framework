@@ -11,7 +11,8 @@
     "allure:open": "allure open reports/allure-report"
   },
   "devDependencies": {
-    "@playwright/test": "^1.54.2",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
     "allure-playwright": "^3.10.2"
   }
 }
