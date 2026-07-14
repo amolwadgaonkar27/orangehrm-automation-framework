@@ -12,5 +12,17 @@
     "username": "Admin",
     "password": "wrong123",
     "expectedResult": "Error message"
+  },
+  "TC003": {
+    "testCaseId": "TC003",
+    "scenario": "Invalid Username",
+    "username": "WrongUser",
+    "password": "admin123"
+  },
+  "TC004": {
+    "testCaseId": "TC004",
+    "scenario": "Login with Blank Credentials",
+    "username": "",
+    "password": ""
   }
 }

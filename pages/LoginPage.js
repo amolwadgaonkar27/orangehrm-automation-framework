@@ -24,6 +24,10 @@ class LoginPage {
     await this.page.waitForSelector(loginLocators.errorMessage);
     return (await this.page.locator(loginLocators.errorMessage).textContent()).trim();
   }
+
+  async getRequiredMessage() {
+    return await this.page.locator(loginLocators.requiredMessage).first().textContent();
+}
 }
 
 module.exports = LoginPage;
