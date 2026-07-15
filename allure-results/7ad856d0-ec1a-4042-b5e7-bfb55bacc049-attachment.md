@@ -1,0 +1,223 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: pim.spec.js >> PIM Module >> TC006 - Add Employee
+- Location: tests/pim.spec.js:38:5
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "Required"
+Received string:    "Employee Id already exists"
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - complementary [ref=e4]:
+      - navigation "Sidepanel" [ref=e5]:
+        - generic [ref=e6]:
+          - link "client brand banner" [ref=e7] [cursor=pointer]:
+            - /url: https://www.orangehrm.com/
+            - img "client brand banner" [ref=e9]
+          - text: 
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - textbox "Search" [ref=e15]
+              - button "" [ref=e16] [cursor=pointer]:
+                - generic [ref=e17]: 
+            - separator [ref=e18]
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "Admin" [ref=e21] [cursor=pointer]:
+                - /url: /web/index.php/admin/viewAdminModule
+                - generic [ref=e24]: Admin
+            - listitem [ref=e25]:
+              - link "PIM" [ref=e26] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewPimModule
+                - generic [ref=e40]: PIM
+            - listitem [ref=e41]:
+              - link "Leave" [ref=e42] [cursor=pointer]:
+                - /url: /web/index.php/leave/viewLeaveModule
+                - generic [ref=e45]: Leave
+            - listitem [ref=e46]:
+              - link "Time" [ref=e47] [cursor=pointer]:
+                - /url: /web/index.php/time/viewTimeModule
+                - generic [ref=e53]: Time
+            - listitem [ref=e54]:
+              - link "Recruitment" [ref=e55] [cursor=pointer]:
+                - /url: /web/index.php/recruitment/viewRecruitmentModule
+                - generic [ref=e61]: Recruitment
+            - listitem [ref=e62]:
+              - link "My Info" [ref=e63] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewMyDetails
+                - generic [ref=e69]: My Info
+            - listitem [ref=e70]:
+              - link "Performance" [ref=e71] [cursor=pointer]:
+                - /url: /web/index.php/performance/viewPerformanceModule
+                - generic [ref=e79]: Performance
+            - listitem [ref=e80]:
+              - link "Dashboard" [ref=e81] [cursor=pointer]:
+                - /url: /web/index.php/dashboard/index
+                - generic [ref=e84]: Dashboard
+            - listitem [ref=e85]:
+              - link "Directory" [ref=e86] [cursor=pointer]:
+                - /url: /web/index.php/directory/viewDirectory
+                - generic [ref=e89]: Directory
+            - listitem [ref=e90]:
+              - link "Maintenance" [ref=e91] [cursor=pointer]:
+                - /url: /web/index.php/maintenance/viewMaintenanceModule
+                - generic [ref=e95]: Maintenance
+            - listitem [ref=e96]:
+              - link "Claim" [ref=e97] [cursor=pointer]:
+                - /url: /web/index.php/claim/viewClaimModule
+                - img [ref=e100]
+                - generic [ref=e104]: Claim
+            - listitem [ref=e105]:
+              - link "Buzz" [ref=e106] [cursor=pointer]:
+                - /url: /web/index.php/buzz/viewBuzz
+                - generic [ref=e109]: Buzz
+    - banner [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - text: 
+          - heading "PIM" [level=6] [ref=e114]
+        - link "Upgrade" [ref=e116]:
+          - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+          - button "Upgrade" [ref=e117] [cursor=pointer]: Upgrade
+        - list [ref=e123]:
+          - listitem [ref=e124]:
+            - generic [ref=e125] [cursor=pointer]:
+              - img "profile picture" [ref=e126]
+              - paragraph [ref=e127]: TestUser Cena
+              - generic [ref=e128]: 
+      - navigation "Topbar Menu" [ref=e130]:
+        - list [ref=e131]:
+          - listitem [ref=e132] [cursor=pointer]:
+            - generic [ref=e133]:
+              - text: Configuration
+              - generic [ref=e134]: 
+          - listitem [ref=e135] [cursor=pointer]:
+            - link "Employee List" [ref=e136]:
+              - /url: "#"
+          - listitem [ref=e137] [cursor=pointer]:
+            - link "Add Employee" [ref=e138]:
+              - /url: "#"
+          - listitem [ref=e139] [cursor=pointer]:
+            - link "Reports" [ref=e140]:
+              - /url: "#"
+          - button "" [ref=e142] [cursor=pointer]:
+            - generic [ref=e143]: 
+  - generic [ref=e144]:
+    - generic [ref=e147]:
+      - heading "Add Employee" [level=6] [ref=e148]
+      - separator [ref=e149]
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - generic [ref=e152]:
+            - generic [ref=e154]:
+              - button "Choose File"
+              - generic [ref=e155]:
+                - img "profile picture" [ref=e157]
+                - button "" [ref=e158] [cursor=pointer]:
+                  - generic [ref=e159]: 
+            - paragraph [ref=e160]: "Accepts jpg, .png, .gif up to 1MB. Recommended dimensions: 200px X 200px"
+          - generic [ref=e161]:
+            - generic [ref=e162]:
+              - generic [ref=e165]:
+                - generic [ref=e167]: Employee Full Name*
+                - generic [ref=e168]:
+                  - textbox "First Name" [ref=e171]: Alice
+                  - textbox "Middle Name" [ref=e174]
+                  - textbox "Last Name" [ref=e177]: Brown
+              - generic [ref=e180]:
+                - generic [ref=e182]: Employee Id
+                - textbox [ref=e184]: "0539"
+                - generic [ref=e185]: Employee Id already exists
+            - separator [ref=e186]
+            - generic [ref=e187]:
+              - paragraph [ref=e188]: Create Login Details
+              - checkbox [ref=e191]
+        - separator [ref=e193]
+        - generic [ref=e194]:
+          - paragraph [ref=e195]: "* Required"
+          - button "Cancel" [ref=e196] [cursor=pointer]
+          - button "Save" [active] [ref=e197] [cursor=pointer]
+    - generic [ref=e198]:
+      - paragraph [ref=e199]: OrangeHRM OS 5.9
+      - paragraph [ref=e200]:
+        - text: © 2005 - 2026
+        - link "OrangeHRM, Inc" [ref=e201] [cursor=pointer]:
+          - /url: http://www.orangehrm.com
+        - text: . All rights reserved.
+```
+
+# Test source
+
+```ts
+  1  | const { test, expect } = require('../fixtures/baseFixture');
+  2  | const { loadTestData } = require('../utilities/testDataLoader');
+  3  | 
+  4  | const loginData = loadTestData('login_test_data.json');
+  5  | const pimData = loadTestData('pimTestData.json');
+  6  | 
+  7  | test.describe('PIM Module', () => {
+  8  | 
+  9  |     test.beforeEach(async ({ loginPage, pimPage }) => {
+  10 | 
+  11 |         await loginPage.goto();
+  12 | 
+  13 |         await loginPage.login(
+  14 |             loginData.TC001.username,
+  15 |             loginData.TC001.password
+  16 |         );
+  17 | 
+  18 |         await pimPage.openPIM();
+  19 | 
+  20 |     });
+  21 | 
+  22 |     test('TC005 - Add Employee', async ({ pimPage }) => {
+  23 | 
+  24 |         await pimPage.clickAddEmployee();
+  25 | 
+  26 |         await pimPage.addEmployee(
+  27 |             pimData.TC005.firstName,
+  28 |             pimData.TC005.middleName,
+  29 |             pimData.TC005.lastName
+  30 |         );
+  31 | 
+  32 |         const success = await pimPage.getSuccessMessage();
+  33 | 
+  34 |         expect(success).toContain('Successfully Saved');
+  35 | 
+  36 |     });
+  37 | 
+  38 |     test('TC006 - Add Employee', async ({ pimPage }) => {
+  39 | 
+  40 |         await pimPage.clickAddEmployee();
+  41 | 
+  42 |         await pimPage.addEmployee(
+  43 |             pimData.TC006.firstName,
+  44 |             pimData.TC006.middleName,
+  45 |             pimData.TC006.lastName
+  46 |         );
+  47 | 
+  48 |         const message = await pimPage.getRequiredMessage();
+  49 | 
+> 50 |         expect(message).toContain('Required');
+     |                         ^ Error: expect(received).toContain(expected) // indexOf
+  51 | 
+  52 |     });
+  53 | 
+  54 | });
+```

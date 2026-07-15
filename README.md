@@ -7,6 +7,10 @@ This framework is built using **JavaScript + Node.js + Playwright** with the **P
 - **TC002** – Invalid Password
 - **TC003** - Invalid Username
 - **TC004** - Blank Credentials
+- **TC005** - Add Employee
+- **TC006** - Add Employee
+- **TC007** - Search Employee
+- **TC008** - Search Invalid Employee
 
 ## Project structure
 ```text
