@@ -1287,7 +1287,7 @@ Received string:    "7757Abgh Suiil269436Ada BelleBahringer0560AddFirst_17841072
 ```ts
   1  | const { test, expect } = require('../fixtures/baseFixture');
   2  | const { loadTestData } = require('../utilities/testDataLoader');
-  3  | const loginData = loadTestData('login_test_data.json');
+  3  | const loginData = loadTestData('loginTestData.json');
   4  | const pimData = loadTestData('pimTestData.json');
   5  | 
   6  | test.describe('PIM Module', () => {

@@ -6,4 +6,4 @@ function loadTestData(fileName) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
-module.exports = { loadTestData };
+module.exports = {loadTestData};

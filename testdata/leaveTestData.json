@@ -1,0 +1,12 @@
+{
+    "TC009": {
+        "fromDate": "2025-01-01",
+        "toDate": "2025-01-01"
+    },
+
+    "TC010": {
+    "leaveType": "CAN - Paid Time Off",
+    "fromDate": "2026-12-08",
+    "toDate": "2026-14-08"
+  }
+}

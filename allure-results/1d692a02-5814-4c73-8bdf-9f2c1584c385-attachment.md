@@ -21,7 +21,7 @@ ReferenceError: testData is not defined
   1  | const { test, expect } = require('../fixtures/baseFixture');
   2  | const { loadTestData } = require('../utilities/testDataLoader');
   3  | 
-  4  | const data = loadTestData('login_test_data.json');
+  4  | const data = loadTestData('loginTestData.json');
   5  | 
   6  | test.describe('OrangeHRM Login - TC001 & TC002', () => {
   7  | 

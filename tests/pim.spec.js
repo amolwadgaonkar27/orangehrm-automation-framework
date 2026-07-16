@@ -1,6 +1,6 @@
 const { test, expect } = require('../fixtures/baseFixture');
 const { loadTestData } = require('../utilities/testDataLoader');
-const loginData = loadTestData('login_test_data.json');
+const data = loadTestData('loginTestData.json');
 const pimData = loadTestData('pimTestData.json');
 
 test.describe('PIM Module', () => {
@@ -9,8 +9,8 @@ test.describe('PIM Module', () => {
 
         await loginPage.goto();
         await loginPage.login(
-            loginData.TC001.username,
-            loginData.TC001.password
+            data.TC001.username,
+            data.TC001.password
         );
 
         await pimPage.openPIM();

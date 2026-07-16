@@ -11,6 +11,8 @@ This framework is built using **JavaScript + Node.js + Playwright** with the **P
 - **TC006** - Add Employee
 - **TC007** - Search Employee
 - **TC008** - Search Invalid Employee
+- **TC009** - Search Leave Records
+- **TC010** - Apply Leave
 
 ## Project structure
 ```text
@@ -44,5 +46,5 @@ npm test
 
 ## Notes
 - Application: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-- Test data is stored in `testdata/login_test_data.json`
+- Test data is stored in `testdata/loginTestData.json`
 # orangehrm-automation-framework

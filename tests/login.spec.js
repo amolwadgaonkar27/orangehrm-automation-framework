@@ -1,7 +1,7 @@
 const { test, expect } = require('../fixtures/baseFixture');
 const { loadTestData } = require('../utilities/testDataLoader');
 
-const data = loadTestData('login_test_data.json');
+const data = loadTestData('loginTestData.json');
 
 test.describe('OrangeHRM Login - TC001 & TC002', () => {
 

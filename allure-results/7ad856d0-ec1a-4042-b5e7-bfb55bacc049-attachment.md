@@ -168,7 +168,7 @@ Received string:    "Employee Id already exists"
   1  | const { test, expect } = require('../fixtures/baseFixture');
   2  | const { loadTestData } = require('../utilities/testDataLoader');
   3  | 
-  4  | const loginData = loadTestData('login_test_data.json');
+  4  | const loginData = loadTestData('loginTestData.json');
   5  | const pimData = loadTestData('pimTestData.json');
   6  | 
   7  | test.describe('PIM Module', () => {
