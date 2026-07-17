@@ -13,6 +13,9 @@ This framework is built using **JavaScript + Node.js + Playwright** with the **P
 - **TC008** - Search Invalid Employee
 - **TC009** - Search Leave Records
 - **TC010** - Apply Leave
+- **TC011** - Create Timesheet
+- **TC012** - Add Candidate
+- **TC012** - Add Candidate
 
 ## Project structure
 ```text

@@ -1,0 +1,12 @@
+{
+    "TC012": {
+        "firstName": "Rahul",
+        "lastName": "Sharma",
+        "email": "rahul@test.com"
+    },
+    "TC013": {
+        "firstName": "Priya",
+        "lastName": "Patel",
+        "email": "priya@test.com"
+    }
+}
