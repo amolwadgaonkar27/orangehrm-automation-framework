@@ -36,13 +36,12 @@ test.describe('Recruitment Module', () => {
 
     test('TC013 - Add Candidate', async ({ recruitmentPage }) => {
 
-    await recruitmentPage.clickAddCandidate();
-
-    await recruitmentPage.addCandidate(
-        recruitmentData.TC013.firstName,
-        recruitmentData.TC013.lastName,
-        recruitmentData.TC013.email
-    );
+        await recruitmentPage.clickAddCandidate();
+        await recruitmentPage.addCandidate(
+            recruitmentData.TC013.firstName,
+            recruitmentData.TC013.lastName,
+            recruitmentData.TC013.email
+        );
 
     const message = await recruitmentPage.getSuccessMessage();
 

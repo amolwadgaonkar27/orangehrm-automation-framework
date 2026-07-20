@@ -19,6 +19,7 @@ test.describe('Leave Module', () => {
     });
 
     test('TC009 - Search Leave Records', async ({ leavePage, page }) => {
+        
         await leavePage.searchLeave(
             leaveData.TC009.fromDate,
             leaveData.TC009.toDate
@@ -36,6 +37,7 @@ test.describe('Leave Module', () => {
     });
 
     test('TC010 - Apply Leave', async ({ leavePage }) => {
+
         await leavePage.openApplyLeave();
         await leavePage.applyLeave(
             leaveData.TC010.leaveType,
