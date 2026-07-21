@@ -19,6 +19,8 @@ This framework is built using **JavaScript + Node.js + Playwright** with the **P
 - **TC014** - Create ESS User
 - **TC015** - Search User
 - **TC016** - Delete User
+- **TC017** - Validate Dashboard Widgets
+- **TC018** - Logout
 
 ## Project structure
 ```text

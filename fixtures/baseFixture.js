@@ -5,6 +5,8 @@ const LeavePage = require('../pages/LeavePage');
 const TimePage = require('../pages/TimePage');
 const RecruitmentPage = require('../pages/RecruitmentPage');
 const AdminPage = require('../pages/AdminPage');
+const DashboardPage = require('../pages/DashboardPage');
+const LogoutPage = require('../pages/LogoutPage');
 
 exports.test = base.test.extend({
 
@@ -33,7 +35,15 @@ exports.test = base.test.extend({
 
   adminPage: async ({ page }, use) => {
     await use(new AdminPage(page));
-    }
+    },
+
+  dashboardPage: async ({ page }, use) => {
+    await use(new DashboardPage(page));
+  },
+
+  logoutPage: async ({ page }, use) => {
+    await use(new LogoutPage(page));
+  }
 
 });
 

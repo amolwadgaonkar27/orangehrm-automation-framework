@@ -9,7 +9,6 @@ test.describe('Recruitment Module', () => {
     test.beforeEach(async ({ loginPage, recruitmentPage }) => {
 
         await loginPage.goto();
-
         await loginPage.login(
             loginData.TC001.username,
             loginData.TC001.password

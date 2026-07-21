@@ -9,7 +9,6 @@ test.describe('Admin Module', () => {
     test.beforeEach(async ({ loginPage, adminPage }) => {
 
         await loginPage.goto();
-
         await loginPage.login(
             loginData.TC001.username,
             loginData.TC001.password
