@@ -1,5 +1,5 @@
 {
-  "name": "orangehrm-framework-tc001-tc002",
+  "name": "orangehrm-framework",
   "version": "1.0.0",
   "description": "OrangeHRM Playwright POM framework for TC001 and TC002",
   "scripts": {
